@@ -24,7 +24,7 @@
         <ul class="list-group">
             <% for (let i=0; i < cargos.length; i++) { %>
                 <li class="list-group-item">
-                    Cargo: <%= cargos[i].nome_cargo %>
+                    Cargo: <b><%= cargos[i].nome_cargo %></b>
                 </li>
                 <% } %>
         </ul>
@@ -33,8 +33,10 @@
         <ul class="list-group">
             <% for (let i=0; i < pessoas.length; i++) { %>
                 <li class="list-group-item">
-                    Nome: <%= pessoas[i].nome %> - Idade: <%= pessoas[i].idade %> - Salário: <%= pessoas[i].salario %> - Cargo: <%=
-                                    pessoas[i].nome_cargo %>
+                    Nome: <b><%= pessoas[i].nome %></b><br>
+                    Idade: <b><%= pessoas[i].idade %></b><br>
+                    Salário: <b><%= pessoas[i].salario %></b><br>
+                    Cargo: <b><%= pessoas[i].nome_cargo %></b>
                 </li>
                 <% } %>
         </ul>
